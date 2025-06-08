@@ -3,6 +3,6 @@
 
 echo  "Enter the Phonenumber:"
 
-read -e -s Phonenumber
+read  -s Phonenumber
 
-echo  " your phone number is : $Phonenumber "
+echo  "your number is : $Phonenumber
