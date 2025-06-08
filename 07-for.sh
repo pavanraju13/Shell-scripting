@@ -10,6 +10,6 @@ do
  echo "print numbers:$i "
  done
 
- Time_Stamp= $(date)
+ Time_Stamp=$(date)
 
- echo "print the time" $Time_Stamp"
+ echo "print the time: $Time_Stamp"
