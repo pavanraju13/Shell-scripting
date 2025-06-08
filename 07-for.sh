@@ -11,3 +11,5 @@ do
  done
 
  Time_Stamp=$( date )
+
+ echo "print the time" $Time_Stamp"
