@@ -6,7 +6,7 @@ kholi=15
 sky=45
 pandya=35
 
-total= $( ( $Rohit + $Jayswal + $kkholi + $sky + $pandya ))
+total= ${ $Rohit + $Jayswal + $kkholi + $sky + $pandya }
 
 Extras=20
 
