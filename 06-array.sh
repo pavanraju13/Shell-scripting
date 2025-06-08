@@ -6,4 +6,4 @@ Batsmens=("Rohit" "Virat" "Sky" "Pandya")
 
 echo "first Batsmen name is : ${Batsmens[0]}"
 
-echo -n/t" list all the batsmens : ${Batsmens[@]}"
+echo -e -n/t" list all the batsmens : ${Batsmens[@]}"
