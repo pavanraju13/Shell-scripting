@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-echo "Enter the Phonenumber:"
+echo -n "Enter the Phonenumber:"
 
-read -S Phonenumber
+read -s Phonenumber
 
 echo "your Phonenumber is :$Phonenumber"
