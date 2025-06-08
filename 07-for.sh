@@ -2,10 +2,10 @@
 
 #Print 1 to 10 numbers
 
-i={1..10}
 
-for i in {$i -le 10 }
-echo "Print the numbers"
+
+for i in {1..10}
+
 do 
- $i 
+ echo "print numbers:$i "
  done
