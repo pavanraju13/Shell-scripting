@@ -5,4 +5,4 @@ echo  "Enter the Phonenumber:"
 
 read -s Phonenumber
 
-echo " your phone number is : $Phonenumber "
+echo -s " your phone number is : $Phonenumber "
