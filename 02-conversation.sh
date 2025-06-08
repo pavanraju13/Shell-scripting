@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-Character1=$Baby
-Character2=$Babu
+Character1=Baby
+Character2=Babu
 echo "
  $Character1: Hi $Character2, How are you?
  $Character2: I am fine. What about you?
