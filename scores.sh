@@ -1,12 +1,12 @@
 #!/bin/bash
 
-Rohit=200
-Jayswal=10
-kholi=15
-sky=45
-pandya=35
+echo "score of Rohit :"
+read Rohit
+echo "score of Jayswal:"
+read Jayswal
 
-total=$(( Rohit + Jayswal + kholi + sky + pandya ))
+
+total=$(( Rohit + Jayswal ))
 
 Extras=20
 
@@ -15,4 +15,3 @@ Total_score=$(( total + Extras ))
 echo "totalscore of team is : $Total_score"
 
 
-echo "  the highest run scorer of the match : ${total[0]}
