@@ -10,5 +10,4 @@ do
  echo "print numbers:$i "
  done
 
- Time_Stamp= $(date)
- 
+ Time_Stamp=$( date )
