@@ -6,10 +6,10 @@ kholi=15
 sky=45
 pandya=35
 
-total= $(( $Rohit+$Jayswal+$kkholi+$sky+$pandya ))
+total= $(( Rohit + Jayswal + kholi + sky + pandya ))
 
 Extras=20
 
-Toatal_score= $(( $total+$Extras ))
+Toatal_score= $(( total + Extras ))
 
 echo "totalscore of team is : $Total_score"
