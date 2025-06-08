@@ -13,3 +13,6 @@ Extras=20
 Total_score=$(( total + Extras ))
 
 echo "totalscore of team is : $Total_score"
+
+
+echo "  the highest run scorer of the match : ${total[0]}
