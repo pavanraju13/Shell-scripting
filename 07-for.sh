@@ -9,3 +9,6 @@ for i in {1..10}
 do 
  echo "print numbers:$i "
  done
+
+ Time_Stamp= $(date)
+ 
