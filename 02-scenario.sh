@@ -10,7 +10,7 @@ read username
 echo "Enter the password:"
 read password
 
-if [ "$username"= "admin" ] && [  "$password" = "secret123" ]
+if [ "$username" = "admin" ] && [  "$password" = "secret123" ]
 then
 echo "Login successful"
 else
