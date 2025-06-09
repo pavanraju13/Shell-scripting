@@ -32,3 +32,8 @@ echo "Given number $Number1 is greater than 100"
 else
 echo "Given number $Number1 is less than 100"
 fi
+
+if [ $Number1 -eq 100 ]
+then 
+echo "Given $Number1 is equlas to 100"
+fi
