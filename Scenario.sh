@@ -7,27 +7,10 @@ Exam1=$1
 Exam2=$2
 Exam3=$3
 
-if [ $Exam1 -gt 40 ]
+if [ $Exam1 -ge 40 ] && if [ $Exam2 -ge 40 ] && if [ $Exam3 -ge 40 ]
 then
-echo "Passed in $Exam1 out of 100"
-else
-echo "Failed in $Exam1 out of 100"
+echo "Result:passed"
+Total=$(( Exam1 + Exam2 + Exam3 ))
+Average= (( Toatl / 3 ))
+echo "average score: $Average
 fi
-
-if [ $Exam2 -gt 40 ]
-then
-echo "Passed in $Exam2 out of 100"
-else
-echo "Failed in $Exam2 out of 100"
-fi
-
-if [ $Exam3 -gt 40 ]
-then
-echo "Passed in $Exam3 out of 100"
-else
-echo "Failed in $Exam3 out of 100"
-fi
-
-echo "The average of three exams score :$Average"
-Average=$(( Exam1 + Exam2 + Exam3 ))
-
