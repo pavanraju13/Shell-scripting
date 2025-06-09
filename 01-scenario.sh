@@ -1,7 +1,10 @@
 ##Write a shell script that reads an employee's basic salary and performance rating. If the rating is greater than or equal to 4 (on a scale of 5), 
 ##the employee gets a 20% bonus on the salary. Otherwise, no bonus. Print the total salary accordingly.
-Basic_Salary=$1
-Rating=$2
+ echo "Enter Basic_Salary:"
+ read $Basic_Salary
+
+echo "Rating:"
+read $Rating
 
 
 if [ $Rating -ge 4 ]
