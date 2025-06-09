@@ -15,4 +15,7 @@ fi
 
 echo "script name :$0"
 
-echo "number of arguments passed: $@"
+echo "To see the  arguments passed: $@"
+
+echo "Number of a arguments passed : $#"
+
