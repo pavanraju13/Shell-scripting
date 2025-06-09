@@ -11,7 +11,7 @@ if [ $Exam1 -ge 40 ] &&  [ $Exam2 -ge 40 ] &&  [ $Exam3 -ge 40 ]
 then
 echo "Result:passed"
 Total=$(( Exam1 + Exam2 + Exam3 ))
-Average=$(( Toatl / 3 ))
+Average=$(( $Total / 3 ))
 echo "average score: $Average
 else
 echo "Result:Failed"
