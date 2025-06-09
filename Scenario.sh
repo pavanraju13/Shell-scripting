@@ -7,7 +7,7 @@ Exam1=$1
 Exam2=$2
 Exam3=$3
 
-if [ $Exam1 -ge 40 ] && if [ $Exam2 -ge 40 ] && if [ $Exam3 -ge 40 ]
+if [ $Exam1 -ge 40 ] &&  [ $Exam2 -ge 40 ] &&  [ $Exam3 -ge 40 ]
 then
 echo "Result:passed"
 Total=$(( Exam1 + Exam2 + Exam3 ))
