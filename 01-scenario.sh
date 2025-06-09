@@ -6,9 +6,10 @@ Rating=$2
 
 if [ $Rating -ge 4 ]
 then
-echo "Employee gets  $Bonus bonus on the salary"
+
 Bonus=$(( Basic_Salary * 20 /100 ))
 Salary=$(( Basic_Salary + Bonus ))
+echo "Employee gets  $Bonus bonus on the salary"
 echo "Total salary is $Salary
 else
 echo "No bonus"
