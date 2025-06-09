@@ -27,7 +27,7 @@ Number1=$2
 
 
 if [ $Number2 -gt 100 ] 
-echo "Given number $Number2 is greater than 100
+echo "Given number $Number2 is greater than 100"
 else
 echo "Given number $Number2 is less than 100"
 fi
