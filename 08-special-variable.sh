@@ -32,7 +32,7 @@ echo "Given number $Number1 is greater than 100"
 else
 echo "Given number $Number1 is less than 100"
 fi
-Number=$3
+Number2=$3
 if [ $Number2 -eq 100 ]
 then 
 echo "Given $Number2 is equlas to 100"
