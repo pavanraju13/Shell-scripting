@@ -12,7 +12,7 @@ then
 echo "Result:passed"
 Total=$(( Exam1 + Exam2 + Exam3 ))
 Average=$(( $Total / 3 ))
-echo "average score: $Average
+echo "average score: $Average"
 else
-echo "Result:Failed"
+echo  "Result:Failed"
 fi
