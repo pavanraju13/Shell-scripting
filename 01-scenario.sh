@@ -3,13 +3,12 @@
  echo "Enter Basic_Salary:"
  read $Basic_Salary
 
-echo "Rating:"
+echo "Enter the Rating:"
 read $Rating
 
 
 if [ $Rating -ge 4 ]
 then
-
 Bonus=$(( Basic_Salary * 20 / 100 ))
 Salary=$(( Basic_Salary + Bonus ))
 echo "Employee gets  $Bonus bonus on the salary"
