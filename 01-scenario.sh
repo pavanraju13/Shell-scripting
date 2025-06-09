@@ -10,4 +10,5 @@ echo "Employee gets  $Bonus on the salary"
 Total_salary=$(( $Basic_Salary + $Bonus ))
 else
 echo "No bonus"
+fi
 
