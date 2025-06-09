@@ -12,3 +12,7 @@ echo "given number is $Number is than 50".
 else
 echo "given number is $Number is not less than 50".
 fi
+
+echo "script name :$0"
+
+echo "number of arguments passed: $@"
