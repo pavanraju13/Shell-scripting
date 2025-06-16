@@ -30,5 +30,5 @@ else
 echo "you are root user"
 fi
 
-Check_Install ()
+Check_Install
 
