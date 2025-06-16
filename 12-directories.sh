@@ -26,7 +26,7 @@ echo "directory created failure"
 fi
 }
 
-if [ $Dir -eq 0 ]
+if [ -d "$Dir" ]
 then
 echo "$Dir already exists"
 else
