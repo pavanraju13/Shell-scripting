@@ -43,11 +43,11 @@ fi
 dnf list installed mongod
 if [ $? -ne 0 ]
 then
-      echo "mongod is not installed.. Moving further to installation of mongod"
-     dnf install -y mongodb-org
+      echo "git is not installed.. Moving further to installation of git"
+     dnf install -y git
 
-      Check_Install $? "mongodb"
+      Check_Install $? "git"
      
     else
-       echo -e "mongod is already installed.. \nThank you"
+       echo -e "git is already installed.. \nThank you"
 fi 
