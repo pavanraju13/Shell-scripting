@@ -3,7 +3,7 @@
 #This is function for the repated code
 
 USER_ID=$( id -u )
-package=python3
+
 
 
 if [ $USER_ID -ne 0 ]
@@ -22,9 +22,9 @@ Check_Install() {
 
      if [ $1 -ne 0 ]
      then 
-     echo "python3 is installed successfully"
+     echo "$2 is installed successfully"
      else
-     echo "python3 is not installed successfully".
+     echo "$2 is not installed successfully".
      exit 1
      fi
 }
@@ -40,4 +40,13 @@ then
 fi 
 
 
-
+dnf list installed nodejs
+if [ $? -ne 0 ]
+then
+      echo "nodejs is not installed.. Moving further to installation of nodejs"
+      dnf install nodejs -y
+      Check_Install $? "nodejs"
+     
+    else
+       echo -e "nodejs is already installed.. \nThank you"
+fi 
