@@ -26,5 +26,5 @@ echo "$1 is not installed.. Moving further to installation of $1"
      echo "$1 is not installed successfully".
      fi
 else
-echo -e "$1 is already installed.. /nThank you"
+echo -e "$1 is already installed.. \nThank you"
 fi
