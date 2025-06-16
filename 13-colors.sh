@@ -11,7 +11,7 @@ Time_stamp=$( date +%Y-%m-%d_%H-%M-%S )
 USER_ID=$( id -u )
 LOG_FOLDER=/var/log/shell-scripting-logs
 LOG_FILE=$LOG_FOLDER/$SCRIPT_NAME.log
-SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1 )
 
 if [ $USER_ID -eq 0 ]
 then
