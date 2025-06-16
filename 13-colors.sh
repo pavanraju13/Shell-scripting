@@ -9,11 +9,13 @@ N="\e[0m"
 
 Time_stamp=$( date +%Y-%m-%d_%H-%M-%S )
 USER_ID=$( id -u )
-Log_file=/tmp/output.log
+LOG_FOLDER=/var/log/shell-scripting
+LOG_FILE=$LOG_FOLDER/$SCRIPT_NAME.log
+SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 
 if [ $USER_ID -eq 0 ]
 then
-echo -e ${G} you are root user. ${N} | tee -a $Log_file
+echo -e ${G} you are root user. ${N} | tee -a $LOG_FILE
 else 
-echo -e ${R} You dont have root privileges. ${N} | tee -a $Log_file
+echo -e ${R} You dont have root privileges. ${N} | tee -a $LOG_FILE
 fi
