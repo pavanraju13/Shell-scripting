@@ -32,8 +32,8 @@ Check_Install() {
     echo  -e $R $Package is not installed successfully $N
     fi
 }
-for Package in ${Package[@]}
-
+for Package in "${Package[@]}"
+do
 dnf list installed $Package &>>$LOG_FILE
 
 if [ $? -eq 0 ]
@@ -44,5 +44,5 @@ echo -e $Y $Package is not installed..Going to install it $N
       dnf install -y $Package &>>$LOG_FILE
       Check_Install $? 
 fi
-
+done
 
