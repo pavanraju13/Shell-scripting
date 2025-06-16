@@ -34,14 +34,14 @@ Check_Install() {
 }
 for Package in ${Package[@]}
 
-dnf list installed $Package &>> $LOG_FILE
+dnf list installed $Package &>>$LOG_FILE
 
 if [ $? -eq 0 ]
 then
 echo -e $G $Package is already installed $N
 else
 echo -e $Y $Package is not installed..Going to install it $N 
-      dnf install -y $Package &>> $LOG_FILE
+      dnf install -y $Package &>>$LOG_FILE
       Check_Install $? 
 fi
 
