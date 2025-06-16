@@ -40,13 +40,13 @@ then
 fi 
 
 
-dnf list installed nodejs
+dnf list installed mongodb
 if [ $? -ne 0 ]
 then
-      echo "nodejs is not installed.. Moving further to installation of nodejs"
-      dnf install nodejs -y
-      Check_Install $? "nodejs"
+      echo "mongodb is not installed.. Moving further to installation of mongodb"
+      dnf install mongodb -y
+      Check_Install $? "mongodb"
      
     else
-       echo -e "nodejs is already installed.. \nThank you"
+       echo -e "mongodb is already installed.. \nThank you"
 fi 
