@@ -17,7 +17,7 @@ dnf list installed $1
 
 if [ $? -ne 0 ]
 then
-echo "$1 is not installed.. Moving further to installation of mysql"
+echo "$1 is not installed.. Moving further to installation of $1"
       dnf install $1 -y
      if [ $? -ne 0 ]
      then 
@@ -26,5 +26,5 @@ echo "$1 is not installed.. Moving further to installation of mysql"
      echo "$1 is not installed successfully".
      fi
 else
-echo -e "$1 is already installed".. /n Thank you
+echo -e "$1 is already installed.. /n Thank you"
 fi
