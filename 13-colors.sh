@@ -32,6 +32,7 @@ Check_Install() {
     echo  -e $R $Package is not installed successfully $N
     fi
 }
+for Package in ${Package[@]}
 
 dnf list installed $Package &>> $LOG_FILE
 
