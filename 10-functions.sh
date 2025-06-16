@@ -44,8 +44,9 @@ dnf list installed mongod
 if [ $? -ne 0 ]
 then
       echo "mongod is not installed.. Moving further to installation of mongod"
-      dnf install mongod -y
-      Check_Install $? "mongod"
+     dnf install -y mongodb-org
+
+      Check_Install $? "mongodb"
      
     else
        echo -e "mongod is already installed.. \nThank you"
