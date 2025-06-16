@@ -15,7 +15,7 @@ SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 
 if [ $USER_ID -eq 0 ]
 then
-echo -e ${G} you are root user. ${N} | tea -a $LOG_FILE
+echo -e ${G} you are root user. ${N} | tee -a $LOG_FILE
 else 
-echo -e ${R} You dont have root privileges. ${N} | tea -a $LOG_FILE
+echo -e ${R} You dont have root privileges. ${N} | tee -a $LOG_FILE
 fi
