@@ -13,7 +13,7 @@ Log_file=/tmp/output.log
 
 if [ $USER_ID -eq 0 ]
 then
-echo -e ${G} you are root user ${N}.
+echo -e ${G} you are root user. ${N} | tee -a $Log_file
 else 
-echo -e ${R} You dont have root privileges ${N}.
+echo -e ${R} You dont have root privileges. ${N} | tee -a $Log_file
 fi
