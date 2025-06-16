@@ -15,5 +15,5 @@ if [ $USER_ID -eq 0 ]
 then
 echo -e ${G} you are root user ${N}.
 else 
-echo "You dont have root privileges"
+echo -e ${R} You dont have root privileges ${N}.
 fi
