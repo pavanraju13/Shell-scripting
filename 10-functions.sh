@@ -40,13 +40,13 @@ then
 fi 
 
 
-dnf list installed mongodb
+dnf list installed mongod
 if [ $? -ne 0 ]
 then
-      echo "mongodb is not installed.. Moving further to installation of mongodb"
-      dnf install mongodb -y
-      Check_Install $? "mongodb"
+      echo "mongod is not installed.. Moving further to installation of mongod"
+      dnf install mongod -y
+      Check_Install $? "mongod"
      
     else
-       echo -e "mongodb is already installed.. \nThank you"
+       echo -e "mongod is already installed.. \nThank you"
 fi 
