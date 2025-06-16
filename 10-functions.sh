@@ -19,7 +19,6 @@ echo "python3 is not installed.. Moving further to installation of python3"
      fi
 else
 echo -e "python3 is already installed.. \nThank you"
-
 }
 
 
@@ -31,5 +30,5 @@ else
 echo "you are root user"
 fi
 
-Check_Install
+Check_Install ()
 
